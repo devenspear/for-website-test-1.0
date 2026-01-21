@@ -31,11 +31,11 @@ export function Partners() {
     <section id="partners" className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading centered>{content.partners.title}</SectionHeading>
-        <p className="text-center text-text-secondary max-w-2xl mx-auto mb-12">
+        <p className="text-center text-text-secondary max-w-2xl mx-auto mb-8 md:mb-12 text-sm md:text-base px-2">
           {content.partners.intro}
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {content.partners.types.map((partner) => (
             <Card key={partner.title} className="text-center h-full flex flex-col">
               <div className="text-primary mx-auto mb-4">
